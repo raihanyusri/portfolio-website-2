@@ -1,13 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Avenir Next;
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
 
 a {
-  color: inherit;
+  color: #0a00bf;
   text-decoration: none;
 }
 
@@ -15,12 +20,101 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
   body {
     color: white;
     background: black;
   }
+}
+
+.bg-bg_image {
+  position: relative;
+  height: 800px;
+}
+
+.bg-bg_image::before {
+  content: "";
+  background-image: url("../public/grid4.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  opacity: 0.04;
+}
+
+.menu-item:hover {
+  color: #0a00bf;
+  font-weight: 450;
+}
+
+.blue {
+  color: #0a00bf;
+}
+
+.icon-hover:hover {
+  color: green;
+}
+
+.fadeIn {
+  animation: fadeInAnimation ease 1s;
+  animation-delay: 0s, 3s, 6s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 10px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+.bg-beige {
+  background-color: #fff0db;
 }
