@@ -4,7 +4,7 @@ export default function Hero() {
     return (
         <div className="flex flex-col items-center text-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
             <h2 className="text-7xl text-black font-semibold pb-3 fadeIn z-10">
-                Hi, I'm <span className="blue">Raihan.</span>
+                Hi, I&apos;m <span className="blue">Raihan.</span>
             </h2>
             <h5 className="text-2xl fadeIn z-10">Developer & Tech Enthusiast.</h5><br/>
             <div>___________________________________________</div><br/>

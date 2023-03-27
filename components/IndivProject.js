@@ -13,7 +13,7 @@ export default function IndivProject(props) {
                 </p>
             </div>
             <div class="px-6 pt-4 pb-2">
-                {props.tech.map(tech => <span class="inline-block bg-beige rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tech}</span>)}
+                {props.tech.map((tech,i) => <span key={i} class="inline-block bg-beige rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tech}</span>)}
             </div>
         </div>
     )
