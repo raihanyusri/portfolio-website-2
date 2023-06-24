@@ -8,7 +8,7 @@ export default function About() {
             </div>
             <div className="h-full lg:w-1/2">
                 <h3 className="text-4xl font-bold pt-5">About me</h3><br/>
-                <div className="text-lg text-gray-800">Hey there! I'm Raihan, a budding software engineer from the sunny island of 🇸🇬. I am currently a final 
+                <div className="text-lg text-gray-800">Hey there! I&apos;m Raihan, a budding software engineer from the sunny island of 🇸🇬. I am currently a final 
                 year student at the National University of Singapore (NUS), pursuing a Bachelor&apos;s of Computing in Information Systems.  <br/><br/>
                 Writing software is something that excites me - I find great joy in the process of bringing ideas to life through code. I aim to 
                 build applications that can bring about positive social changes and impact public good. <br/><br/>
