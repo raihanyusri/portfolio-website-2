@@ -26,9 +26,11 @@ export default function Home() {
         <div id="about">
           <About />
         </div>
-        <div id="experience">
+      </div>
+      <div id="experience">
           <Experience />
         </div>
+      <div className="container mx-auto p-5 mb-10">
         <div id="projects">
           <Projects />
         </div>

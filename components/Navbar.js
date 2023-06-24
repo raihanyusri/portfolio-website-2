@@ -56,7 +56,7 @@ export default function Navbar() {
                 navbar ? 'block' : 'hidden'
               }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-10 md:space-y-0">
                 <li className="text-black text-lg menu-item">
                   <Link href="#about">
                     About

@@ -4,11 +4,11 @@ import IndivProject from './IndivProject';
 
 export default function Project() {
     return (
-        <div className="items-center justify-evenly pt-10">
+        <div className="items-center justify-evenly pt-20">
             <div className="flex justify-center">
-            <h3 className="text-4xl font-bold ">Projects</h3><br/>
+                <h3 className="w-10/12 mx-auto text-4xl font-bold">Projects</h3><br/>
             </div>
-            <div class="grid grid-cols-1 gap-6 gap-y-20 pt-20 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-6 gap-y-20 pt-20 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <IndivProject 
                 name="NUSociety"
                 type="Interactive Co-curricular Activity Portal"
