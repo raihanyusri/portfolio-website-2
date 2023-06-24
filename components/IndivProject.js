@@ -1,10 +1,9 @@
-import Link from 'next/link';
-import Company from './Company';
+import Image from "next/image"
 
 export default function IndivProject(props) {
     return (
         <div className="max-w-md rounded-xl overflow-hidden shadow-md">
-            <img className="w-full" src={props.image} alt="project"/>
+            <Image width={100}  height={100} className="w-full" src={props.image} alt="project"/>
             <div className="px-6 py-4">
                 <h3 className="font-bold text-xl">{props.name}</h3>
                 <h3 className="text-lg font-medium blue mb-2">{props.type}</h3>
