@@ -22,7 +22,7 @@ export default function Company(props) {
                 </div>
             </div>
             <div>
-                <Image width={100} height={100} className="mt-10 w-40 h-28 h-full lg:w-1/9" src={props.img} alt="logo"></Image>
+                <Image width={100} height={100} className="mt-10 w-40 h-28 h-full lg:w-1/9" src={props.img} alt="logo" unoptimized></Image>
             </div>
         </div>
     )

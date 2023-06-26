@@ -118,3 +118,19 @@ a {
 .bg-beige {
   background-color: #fff0db;
 }
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-text {
+  color: grey;
+  opacity: 0; /* Hide the text by default */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.icon-container:hover .icon-text {
+  opacity: 1; /* Show the text on hover */
+}

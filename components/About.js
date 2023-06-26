@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div className="flex flex-wrap items-center justify-evenly pt-10 pb-20 animated animatedFadeInUp fadeInUp">
             <div className="h-full lg:w-23/100">
-                <Image width={200} height={300} className="h-120 w-96" alt="portrait" src="/swiss_portrait.jpg" />
+                <Image width={200} height={300} className="h-120 w-96" alt="portrait" src="/swiss_portrait.jpg" unoptimized/>
             </div>
             <div className="h-full lg:w-1/2">
                 <h3 className="text-4xl font-bold pt-5">About me</h3><br/>
@@ -14,18 +14,45 @@ export default function About() {
                 build applications that can bring about positive social changes and impact public good. <br/><br/>
                 <h5 className="text-xl font-bold">Skills</h5>
                 </div>
-                <div className="flex items-baseline pt-2 pb-5">
-                    <Image alt="icon" width={12} height={12} className="h-10 w-10 mr-3" src="/icons/java.svg" />
-                    <Image alt="icon" width={12} height={12} className="h-10 w-10 mr-3" src="/icons/js.svg" />
-                    <Image alt="icon" width={12} height={12} className="h-10 w-10 mr-3" src="/icons/python.svg" />
+                <div className="flex items-baseline pt-2 pb-2">
+                    <div className="flex flex-col icon-container mr-1">
+                        <Image alt="icon" width={12} height={12} className="h-10 w-10" src="/icons/java.svg" />
+                        <p className="icon-text text-xs">Java</p>
+                    </div>
+                    <div className="flex flex-col icon-container mr-1">
+                        <Image alt="icon" width={12} height={12} className="h-10 w-10" src="/icons/js.svg" />
+                        <p className="icon-text text-xs">JavaScript</p>
+                    </div>
+                    <div className="flex flex-col icon-container mr-1">
+                        <Image alt="icon" width={12} height={12} className="h-10 w-10" src="/icons/python.svg" />
+                        <p className="icon-text text-xs">Python</p>
+                    </div>
                 </div>
-                <div className="flex items-baseline pt-2">
-                    <Image alt="icon" width={12} height={12} className="h-10 w-10 mr-3" src="/icons/react.svg" />
-                    <Image alt="icon" width={12} height={12} className="h-10 w-10 mr-3" src="/icons/node.svg" />
-                    <Image alt="icon" width={12} height={12} className="h-8 w-8 mr-3" src="/icons/express.svg" />
-                    <Image alt="icon" width={12} height={12} className="h-10 w-10 mr-3" src="/icons/mongodb.svg" />
-                    <Image alt="icon" width={12} height={12} className="h-9 w-9 mr-3" src="/icons/mysql.svg" />
-                    <Image alt="icon" width={12} height={12} className="h-10 w-10 mr-3" src="/icons/redis.svg" />
+                <div className="flex items-baseline">
+                    <div className="flex flex-col icon-container mr-1">
+                        <Image alt="icon" width={12} height={12} className="h-10 w-10" src="/icons/react.svg" />
+                        <p className="icon-text text-xs">React.js</p>
+                    </div>
+                    <div className="flex flex-col icon-container mr-1">
+                        <Image alt="icon" width={12} height={12} className="h-10 w-10" src="/icons/node.svg" />
+                        <p className="icon-text text-xs">Node.js</p>
+                    </div>
+                    <div className="flex flex-col icon-container mr-1">
+                        <Image alt="icon" width={12} height={12} className="h-8 w-8" src="/icons/express.svg" />
+                        <p className="icon-text text-xs">Express</p>
+                    </div>
+                    <div className="flex flex-col icon-container mr-1">
+                        <Image alt="icon" width={12} height={12} className="h-10 w-10" src="/icons/mongodb.svg" />
+                        <p className="icon-text text-xs">Mongo</p>
+                    </div>
+                    <div className="flex flex-col icon-container mr-1">
+                        <Image alt="icon" width={12} height={12} className="h-9 w-9" src="/icons/mysql.svg" />
+                        <p className="icon-text text-xs">MySQL</p>
+                    </div>
+                    <div className="flex flex-col icon-container mr-1">
+                        <Image alt="icon" width={12} height={12} className="h-10 w-10" src="/icons/redis.svg" />
+                        <p className="icon-text text-xs">Redis</p>
+                    </div>
                 </div>
             </div>
         </div>
