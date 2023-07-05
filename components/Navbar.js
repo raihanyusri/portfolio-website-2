@@ -57,17 +57,17 @@ export default function Navbar() {
               }`}
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-10 md:space-y-0">
-                <li className="text-black text-lg menu-item">
+                <li className="text-lg menu-item">
                   <Link href="#about">
                     About
                   </Link>
                 </li>
-                <li className="text-black text-lg menu-item">
+                <li className="text-lg menu-item">
                   <Link href="/#experience">
                     Experience
                   </Link>
                 </li>
-                <li className="text-black text-lg menu-item">
+                <li className="text-lg menu-item">
                   <Link href="/#projects">
                     Projects
                   </Link>

@@ -6,7 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Avenir Next;
+  font-family: 'Hanken Grotesk', sans-serif;
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
 }
@@ -48,8 +48,9 @@ a {
 }
 
 .menu-item:hover {
-  color: #0a00bf;
-  font-weight: 450;
+  color: #030039;
+  border-width: 1;
+  border-color: red;
 }
 
 .blue {
