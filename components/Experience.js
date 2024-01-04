@@ -7,14 +7,31 @@ export default function Experience() {
             <div className="container mx-auto p-5 mb-10">
                 <h3 className="w-10/12 mx-auto text-4xl font-bold pb-10">Experience</h3><br/>
                 <Company 
+                    name="National University of Singapore"
+                    role="Teaching Assistant"
+                    desc={["Served as teaching assistant for module IS2103: Enterprise Systems Server-side Design & Development", 
+                            "Graded practical examinations, coding assignments and responded to student queries",]}
+                    period="Aug 2023 - Nov 2023"
+                    location="Singapore"
+                    img="/nus.png"
+                    skills={["JavaEE"]}/>
+                <Company 
+                    name="NUS Enterprise"
+                    role="Software Engineer Intern"
+                    desc={["In a team of 3, developed a web application for local hydroponics company ComCrop focusing on improving process management", 
+                            "Implemented a simulation feature which allows farmers to create a virtual model of their future plantations for better planning and decision making",
+                        "Successfully eliminated manual pen-and-paperwork for farm managers by 100%"]}
+                    period="Aug 2023 - Nov 2023"
+                    location="Singapore"
+                    img="/nus_enterprise.png"
+                    skills={["React.js", "Django", "React Native"]}/>
+                <Company 
                     name="Ryde"
                     role="Software Engineer Intern"
-                    desc={["Singlehandedly built a web view for the Ryde mobile application help center, allowing users to view relevant articles related to their trip and submit queries via forms", 
-                            "Reduced customer service touchpoints by centralizing user queries to Zendesk, increasing operational efficiency by 50%",
-                            "Built an internal feature to create and update user-facing forms using Node.js, MongoDB and Redis from scratch",
-                            "Added features in the internal web portal to streamline the process of approving organizations for the company's B2B solution (Ryde For Corporate)",
-                            "Worked in a team of 2 to develop an internal tool for Firebase Remote Config management with Google Cloud Platform Pub/Sub queue for logging",
-                            "Proposed and implemented a Node.js script to update Braze SMS subscription statuses of all 450,000 active users of the Ryde mobile application"]}
+                    desc={["Singlehandedly built a web view for the Ryde mobile application help center, allowing 450,000 active users to view relevant articles related to their trip", 
+                            "Reduced customer service touchpoints by centralizing user queries to Zendesk, increasing operational efficiency of the CX team by 50%",
+                            "Built an internal feature for the CX team to create and update user-facing forms using from scratch, to be displayed together with certain articles",
+                            "Developed an internal tool for Firebase Remote Config management integrated with Google Cloud Platform Pub/Sub queue"]}
                     period="Jan 2023 - Jun 2023"
                     location="Singapore"
                     img="/ryde.png"
@@ -22,8 +39,8 @@ export default function Experience() {
                 <Company 
                     name="NTUC LearningHub"
                     role="Software Developer Intern"
-                    desc={["Developed and streamlined API integration with SkillsFutureSG, a workflow which processes ~10,000 requests daily, by migrating code from Java to MuleSoft",
-                            "Implemented multithreading for batch processing, improving runtime by 60% and significantly saving countless man-hours",
+                    desc={["Developed and streamlined API integration with SkillsFutureSG, a workflow which processes ~10,000 requests daily",
+                            "Implemented multithreading for batch processing, improving runtime by 50% and significantly saving countless man-hours",
                             "Updated live data of over 90,000 trainees in Microsoft SQL with regards to course status, enrolment, and attendances"]}
                     period="May 2022 - July 2022"
                     location="Singapore"

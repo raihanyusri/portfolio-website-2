@@ -10,6 +10,16 @@ export default function Project() {
             </div>
             <div className="grid grid-cols-1 gap-6 gap-y-20 pt-20 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <IndivProject 
+                name="Heart2Hub"
+                type="Hospital Management System"
+                desc={`Consists of a web application for healthcare professionals to streamline patient care through agile practices, and a mobile application for increased clarity of a patient's journey.
+                    <br/>Built for NUS Module IS4103: Information Systems Capstone Project.
+                    <br/> Grade: A
+                    <br/> Won 1st Place at the NUS School of Computing Term Project Showcase (STePS)`}
+                image="/h2h.png"
+                github="https://github.com/Heart2Hub"
+                tech={["React.js", "Redux", "Ionic", "Spring Boot", "Node.js", "PostgreSQL"]}/>
+            <IndivProject 
                 name="NUSociety"
                 type="Interactive Co-curricular Activity Portal"
                 desc={`A web application for university students to manage co-curricular activities including events, attendance, posts, comments and more.

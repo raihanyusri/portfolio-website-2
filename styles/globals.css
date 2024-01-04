@@ -6,7 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Hanken Grotesk', sans-serif;
+  /* font-family: 'Hanken Grotesk', sans-serif; */
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
 }

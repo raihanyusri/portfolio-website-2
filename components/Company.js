@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Company(props) {
     return (
-        <div className="flex flex-wrap-reverse items-end justify-evenly mb-20">
+        <div className="flex flex-wrap-reverse items-end justify-evenly mb-20 border rounded-xl p-6 bg-white shadow hover:shadow-lg">
             <div className="px-6 h-full lg:w-2/3">
                 <div className="flex justify-between mt-10">
                     <h3 className="text-2xl font-semibold mb-2">{props.name}</h3>
