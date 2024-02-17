@@ -4,16 +4,18 @@ import Link from "next/link"
 export default function IndivProject(props) {
     return (
         <div className="max-w-md rounded-xl overflow-hidden shadow-md">
-            <Image width={100}  height={100} className="w-full" src={props.image} alt="project" unoptimized/>
+            <div className="flex justify-center items-center">
+                <Image width={100} height={100} className="w-3/4" src={props.image} alt="project" unoptimized />
+            </div>
             <div className="px-6 py-4">
-                <h3 className="font-bold text-xl">{props.name}</h3>
-                <h3 className="text-lg font-medium blue mb-2">{props.type}</h3>
-                <p className="text-gray-700 text-base" style={{ whiteSpace: "pre-line" }}>
+                <h3 className="font-bold text-md">{props.name}</h3>
+                <h3 className="text-sm font-medium blue mb-2">{props.type}</h3>
+                <p className="text-sm text-gray-700 text-base" style={{ whiteSpace: "pre-line" }}>
                     {props.desc.split("<br/>").join("\n")}<br/>
                 </p>
             </div>
             <div className="px-6 pt-4">
-                {props.tech.map((tech,i) => <span key={i} className="inline-block bg-beige rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tech}</span>)}
+                {props.tech.map((tech,i) => <span key={i} className="inline-block bg-beige rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">{tech}</span>)}
             </div>
             <div className="px-6 py-4 mb-6">
                 <div className="float-right">
